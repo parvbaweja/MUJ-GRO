@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROCERY DELIVERYt</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+   <header>
+    <div class="navbar">
+        <div class="logo"> 
+            <img src="logo.png" height="90px" width="90px">
+        </div>
+        <div class="nav-search">
+            <div class="search-icon" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="search-input">
+            <input placeholder=" " id ="menu" style="width: 640px; height: 47px;">
+            </div>
+            </div>
+      <div class="navhome">
+        <h1> Home </h1>
+      </div>
+      <div class="navabout">
+        <h1> About Us </h1>
+      </div>
+      <div class="menu"></div>
+        <div class="loginbutton">
+            <button i class="fa-solid fa-cart-shopping"></i> &nbsp My Cart </button>
+        </div>
+    </div>
+    <section class="firstSection">
+        <div class="leftSection">
+            Get your <span class="purple"> Needs </span>
+            <div> Delivered at your doorstep </div>
+            <span id="element"></span>
+            <br><br>
+            <button class="btn"> Order Now</button>
+        </div>
+        <div class="rightSection">
+            <img src="pic1.png" alt="">
+        </div>
+    </section>
+   </header> 
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Grocery', 'Medicines', 'Stationary'],
+      typeSpeed: 40,
+    });
+
+    var typed = new Typed('#menu', {
+      strings: ['Search chocolates', 'Search gelpen', 'Search paracetamol','Search softdrinks', 'Search blanksheets', 'Search savlon', 'Search chips', 'Search staplerpins', 'Search bandages'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>

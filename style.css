@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+}
+body{
+    background-color: beige;
+}
+.navbar{
+    display: flex;
+    /*background-color: pink; */
+    justify-content: space-evenly; 
+    border-bottom: 2px solid yellow;
+}
+.logo{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.nav-search{
+    display: flex;
+    background-color: rgb(99, 217, 99);
+    border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+    height: 50px;
+    width: 688px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-right: 9px;
+    margin-left: 9px;
+    color:beige ;
+
+}
+.search-input{
+    font-size: 1rem;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.navhome{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 0.70rem;
+}
+.navabout{
+    margin-top: 30px;
+    font-size: 0.70rem;
+}
+.loginbutton{
+    margin-top: 10px;
+}
+button{
+    background-color: rgb(99, 217, 99);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    margin-top: 17px;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 132px 0;
+    margin-left: 70px;
+}
+.firstSection>div{
+    width: 60%;
+}
+.leftSection{
+font-size: 2.5rem;
+margin: 70px 0;
+}
+.rightSection img{
+    width: 90%;
+}   
+.purple{
+  color: rgb(99, 51, 230) ;
+}
+#menu{
+    margin-left: 5px;
+    text-align: center;
+    align-items: cf;
+}

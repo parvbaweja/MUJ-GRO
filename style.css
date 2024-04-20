@@ -13,15 +13,22 @@ header{
 }
 .categoryOne{
     background-color: #F8F4ED;
-    height: 200px;
+    height: 300px;
     display: flex;
     align-items: center;
+}
+.more-info a{
+    color: #0A5247;
 }
 .categoryTwo{
     background-color: #F8F4ED;
     display: flex;
     align-items: center;
     height: 300px;
+}
+a{
+    text-decoration: none;
+    color: #0A5247;
 }
 .copoun{
     background-image: url("6.png");
@@ -295,3 +302,113 @@ padding: 10px;
 font-weight: 500;
 padding: 10px;
 } 
+/* Fade-in effect for all sections */
+section, footer, header, .navbar {
+    animation: fadeIn 1s ease-out;
+}
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Slide down for header */
+header {
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+}
+
+/* Hover effect on navbar items */
+.navbar div {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar div:hover {
+    transform: scale(1.1);
+}
+
+/* Slowly enlarging the logo on hover */
+.logo img {
+    transition: transform 0.5s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+/* Spin animation for the search icon */
+.search-icon i {
+    display: inline-block;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Button hover effect */
+button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: purple;
+    color: white;
+}
+
+/* Section entry animations */
+.firstSection, .categoryOne, .categoryTwo, .more-info {
+    animation: entry 0.8s ease-out forwards;
+}
+
+@keyframes entry {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Specific animations for category images */
+.categoryOne img, .categoryTwo img {
+    transition: transform 0.5s ease;
+}
+
+.categoryOne img:hover, .categoryTwo img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Text typing effect for dynamic text */
+#element {
+    font-size: 24px;
+    color:#0A5247;
+    font-weight: bold;
+}
+
+/* Footer style */
+footer {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Animation for footer links */
+.footerleft a, .footerright a {
+    transition: color 0.3s ease;
+}
+
+.footerleft a:hover, .footerright a:hover {
+    color: purple;
+}
+
+/* Copoun section animation */
+.copoun h1 {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
